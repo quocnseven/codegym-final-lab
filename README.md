@@ -1,0 +1,14 @@
+- index.html
+- assets
+    -images
+        -product
+        -user
+    -css
+    -scss
+        -partials
+            -_mixin.scss
+            -_extend.scss
+            -_variable.scss
+            -_font.scss
+        -main.scss
+- README.md

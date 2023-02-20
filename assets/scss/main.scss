@@ -1,0 +1,53 @@
+::selection {
+    background: rgb(170, 131, 23);
+}
+
+:root{
+    --header-nav-height: 100px;
+}
+
+@import "./partials/mixin";
+@import "./partials/font";
+@import "./partials/extend";
+@import "./partials/variable";
+
+.header{
+    .header-navbar{
+        background-color: rgb(56, 59, 43);
+        height: var(--header-nav-height);
+        box-shadow: 0 1px 2px rgb(69, 69, 69);
+        .nav-item{
+            :hover{
+                color: rgba(252, 252, 11, 0.3);
+              
+            }
+        }
+       .navbar-cart{
+        position: relative;
+        &::after{
+            --circle: 20px;
+            content: "1";
+            color: black;
+            background-color: gold;
+            position: absolute;
+            border-radius: var(--circle);
+            width: var(--circle);    
+            height: var(--circle);
+            top: 0;
+            right: -10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+       }
+    }
+    .header-carousel{
+        max-height: 300px;
+        margin-top: var(--header-nav-height);
+        .header-carousel-img{
+            width: 100%;
+          
+        }
+    }
+    
+}
