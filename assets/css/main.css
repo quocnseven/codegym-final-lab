@@ -479,14 +479,23 @@
 .dish-section .dish-list .dish-list__link--active:hover {
   opacity: 0.8;
 }
+.dish-section .dish-item {
+  overflow: hidden;
+  position: relative;
+}
+.dish-section .dish-item:hover .dish-item-img {
+  transform: scale(1.3);
+  margin-bottom: 20px;
+}
 .dish-section .dish-item-img {
   height: 300px;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  transition: all linear 0.5s;
 }
 .dish-section .dish-item .dish-name {
-  margin-top: 20px;
+  margin-top: 40px;
   font-size: 40px;
 }
 .dish-section .dish-item .dish-price {
