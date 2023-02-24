@@ -1,0 +1,33 @@
+// button
+.btn-outline-main{
+    color: $main-color;
+    background-color: transparent;
+    border: 1px solid $main-color;
+    padding: 6px;
+    border-radius: 10px;
+    &:hover{
+        background-color: $main-color;
+        color: white;
+        padding: 6px;
+        border-radius: 10px;
+    }
+}
+
+.btn-main{
+    background-color: $main-color;
+    color: white;
+    padding: 6px;
+    border-radius: 6px;
+}
+
+.btn-confirm-custom{
+    padding: 6px;
+    color: rgb(255, 255, 255);
+    background-color: $main-btn-color;
+    border-radius: 10px;
+    cursor: pointer;
+    &:hover{
+        background-color: white;
+        color: black;
+    }
+}

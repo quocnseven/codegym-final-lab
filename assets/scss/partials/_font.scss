@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:wght@100;300;400;500;700;900&display=swap');
+@import './variable';
+
+
+ .font-title{
+   color: $main-color;
+    font-family: 'Dancing Script', cursive;
+   
+ }
+
+ .font-subtitle{
+   color: white;
+   font-weight: bold;
+   
+ }
+
+ .text-normal{
+   color: rgba($color: #d3d3d3, $alpha: 0.8);
+ }
