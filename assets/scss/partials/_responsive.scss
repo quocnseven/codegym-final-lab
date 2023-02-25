@@ -3,33 +3,42 @@
 @media only screen and (max-width: 576px){
     .header{
         .header-carousel{
-           
             .carousel-overlay{
                 display: none;
             }
         }
-        
     }
     
 
-    // book section
     .book-section{
         display: flex;
         flex-direction: column;
         .book-info-wrap{
             width: 100%;
-            
             .book-info{
-                display: flex;
-                flex-direction: column;
                 width: 100%;
-                &__item{
-                    margin-bottom: 10px;
-                }
             }
         }
         .book-input{
             width: 100%;
+            .book-input-name{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-date{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-submit{
+                flex-direction: column;
+                textarea{
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 
@@ -59,59 +68,122 @@
         }
     }
 
+    // review section
+    .review-section{
+        .review-wrap{
+            flex-wrap: wrap;
+        }
+    }
+
+    // recent-seciton
+    .recent-section{
+        .recent-wrap{
+            margin-bottom: 60px;
+        }
+    }
+
+    // map section
+    .map-section{
+        padding: 60px 20px;
+        background-color: black;
+        .map{
+            width: 100%;
+            overflow: hidden;
+        }
+        .map-form-input{
+            .font-subtitle{
+                margin-bottom: 30px;
+            }
+            form{
+                .map-form-input__name{
+                    @extend %form-display;
+                    flex-direction: column;
+                    
+                    .name-input{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input__date{
+                    @extend %form-display;
+                    flex-direction: column;
+                    input{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input-submit{ 
+                    @extend %form-display;
+                    flex-direction: column;
+                    textarea{
+                        @include form-input-main;
+                        height: 3em;
+                        margin-bottom: 10px;
+                    }
+                    .btn-main{
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
-
+// ----------------
 
 
 // tablet
 @media only screen and (max-width: 821px) and (min-width: 577px){
+    // header
     .header{
         .header-carousel{
-            height: 400px;
-            position: relative;
-            overflow: hidden;
-
-            .carousel-wrap{
-                width: 100%;
-                height: 400px;
-            }
             .carousel-item{
-                .header-carousel-img{
-                  width: 100%;
-                  height: 100%;
-                }
-            }
-            
-            .header-intro{
-                color: white;
-                position: absolute;
-                top: 30%;
-                left: 6%;
-                p{
-                    font-size: 40px;
-                }
-                h1{
-                    font-size: 24px;
-                }
-                h3{
-                    font-size: 22px;
+                .carousel-overlay{
+                    top: 10%;
+                    left: 50%;
                 }
             }
         }
-        
-        
     }
+    
+    // book section
     .book-section{
         display: flex;
         flex-direction: column;
         .book-info-wrap{
+            width: 100%;
             .book-info{
                 width: 100%;
             }
         }
         .book-input{
             width: 100%;
+            .book-input-name{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-date{
+                flex-direction: column;
+                input{
+                    margin-bottom: 10px;
+                }
+            }
+            .book-input-submit{
+                flex-direction: column;
+                textarea{
+                    margin-bottom: 10px;
+                }
+            }
         }
     }
 
@@ -141,17 +213,63 @@
             
         }
     }
+
+    // review section
+    .review-section{
+        .review-wrap{
+            flex-wrap: wrap;
+        }
+    }
+
+    // map section
+    .map-section{
+        
+        .map{
+            
+        }
+        .map-form-input{
+            .font-subtitle{
+                
+            }
+            form{
+                .map-form-input__name{
+                    
+                    flex-direction: column;
+                    
+                    .name-input{
+                       
+                       
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input__date{
+                 
+                    flex-direction: column;
+                    input{
+                        
+                        margin-bottom: 10px;
+                    }
+                }
+                .map-form-input-submit{ 
+                   
+                    flex-direction: column;
+                    textarea{
+                        
+                        margin-bottom: 10px;
+                    }
+                    
+                }
+            }
+        }
+    }
 }
 
+
+// --------------
 
 // PC
 @media only screen and (min-width: 1024px){
 
-
-
-    
-    
-    
     // about section
     .about-section{
        .about-half{ 
@@ -171,3 +289,4 @@
     }
     
 }
+

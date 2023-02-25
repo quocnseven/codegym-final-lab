@@ -7,5 +7,25 @@
     border-bottom: 1px solid rgba(124, 124, 124, 0.3);
 }
 
+%form-display{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+
+%icon-background-circle{
+    background-color: gray;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    padding: 10px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+%icon-size-small{
+    font-size: 24px;
+}
 
 @import './variable';
