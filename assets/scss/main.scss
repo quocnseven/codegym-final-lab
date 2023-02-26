@@ -23,13 +23,6 @@
 
 
 // site music
-.site-music{
-    position: fixed;
-    bottom: 10px;
-    right: 10px;
-    z-index: 999;
-}
-
 
 // site wrap
 
@@ -40,6 +33,11 @@
         background-color: $main-color;
         height: var(--header-nav-height);
         box-shadow: 0 1px 2px rgb(69, 69, 69);
+        .font-title{
+            color: white;
+            margin-bottom: -20px;
+            
+        }
         .nav-item{
             :hover{
                 color: rgba(252, 252, 11, 0.3);
@@ -204,7 +202,7 @@
                     color: rgb(255, 190, 105);
                 }
                 &-subheader{
-                    margin-top: -32px;
+                    margin-top: -1.5rem;
                 }
                 p{
                     padding: 0 40px;
@@ -227,6 +225,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
+        h1{
+            text-align: center;
+        }
+        p{
+            text-align: center;
+        }
         .service-item-choose{
             border: 1px solid black;
             width: 100px;
@@ -256,7 +261,7 @@
             font-size: 40px;
         }
         .discover-title{
-            margin-top: -42px;
+            margin-top: -2.4rem;
             color: white;
         }
         .discover-content{
@@ -376,7 +381,7 @@
     padding-bottom: 100px;
     text-align: center;
     .font-title{
-        margin-bottom: -22px;
+        margin-bottom: -1rem;
     }
     .best-seller-item{
         margin-bottom: 20px;
@@ -485,7 +490,7 @@
     text-align: center;
     .dish-title{
         font-size: 40px;
-        margin-bottom: -40px;
+        margin-bottom: -1.8rem;
     }
     .dish-subtitle{
         font-size: 40px;
@@ -568,7 +573,7 @@
         font-size: 60px;
     }
     .font-subtitle{
-        margin-top: -40px;
+        margin-top: -1.9rem;
         font-size: 60px;
     }
     .review-section-about{
@@ -576,20 +581,17 @@
         margin-bottom: 200px;
     }
     .review-wrap{
-        display: flex;
-        align-items: flex-end;
-        flex-wrap: nowrap;
         .review-item{
-            padding: 30px;
+            margin-right: 10px;
+            margin-bottom: 10px;
+            padding: 20px;
             background-color: $main-color;
             p{
                 color: rgba(255,255,255,0.6);
             }
             .review-footer{
-                display: flex;
-                justify-content: center;
-                align-items: center;
                 .review-footer__avatar{
+                    width: 50%;
                     margin-right: 10px;
                     img{
                         width: 40px;
@@ -598,7 +600,7 @@
                 }
                 .review-footer__info{
                     width: 50%;
-                    flex-shrink: 0;
+                    // flex-shrink: 0;
                     h3{
 
                     }
@@ -681,6 +683,7 @@
     .map{
         width: 100%;
         overflow: hidden;
+        margin-bottom: 2rem;
     }
     .map-form-input{
         .font-subtitle{
@@ -739,24 +742,31 @@
                 display: flex;
                 justify-content:space-around;
                 align-items: center;
-                .twitter{
-                    @extend %icon-background-circle;
-                    i{
-                        @extend %icon-size-small;
+                a{
+                    text-decoration: none;
+                    color: white;
+                    &:hover{
+                        opacity: 0.8;
                     }
-                }
-                .facebook{
-                    @extend %icon-background-circle;
-                    i{
-                        @extend %icon-size-small;
+                    .twitter{
+                        @extend %icon-background-circle;
+                        i{
+                            @extend %icon-size-small;
+                        }
                     }
-                }
-                .instagram{
-                    @extend  %icon-background-circle;
-                    i{
-                        @extend %icon-size-small;
+                    .facebook{
+                        @extend %icon-background-circle;
+                        i{
+                            @extend %icon-size-small;
+                        }
                     }
-                }
+                    .instagram{
+                        @extend  %icon-background-circle;
+                        i{
+                            @extend %icon-size-small;
+                        }
+                    }
+                } 
             }
         }
         .recent-blog{
@@ -768,6 +778,9 @@
                 .img-wrap{
                     width: 100%;
                     height: 100%;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                     .img{
                         text-decoration: none;
                         display: block;
@@ -785,12 +798,19 @@
                     text-decoration: none;
                     width: 100%;
                     color: gray;
+                    &:hover{
+                        opacity: 0.8;
+                    }
                 }
                 .recent-blog-half__time{
                     display: flex;
+                    align-items: center;
                     width: 100%;
                     a{
                         text-decoration: none;
+                        &:hover{
+                            opacity: 0.8;
+                        }
                         .time{
                             display: flex;
                             .icon-wrap{
@@ -875,6 +895,10 @@
     .coppy-right{
         margin-top: 40px;
         text-align: center;
+        p{
+            font-size: 20px;
+            color: gray;
+        }
     }
 }
 

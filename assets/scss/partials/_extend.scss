@@ -4,7 +4,10 @@
     color: white;
     background-color: $main-color;
     border: none;
-    border-bottom: 1px solid rgba(124, 124, 124, 0.3);
+    border-bottom: 1px solid rgba($color: #000000, $alpha: 0.5);
+    border-left: 1px solid rgba($color: #000000, $alpha: 0.5);
+    padding: 10px;
+    border-radius: 4px;
 }
 
 %form-display{

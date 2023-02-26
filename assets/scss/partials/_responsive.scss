@@ -25,18 +25,30 @@
                 flex-direction: column;
                 input{
                     margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
                 }
             }
             .book-input-date{
                 flex-direction: column;
                 input{
                     margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
                 }
             }
             .book-input-submit{
                 flex-direction: column;
                 textarea{
                     margin-bottom: 10px;
+                    font-size: 20px;
+                    border: 1px solid gray;
+                    border-radius: 2px;
+                    padding: 8px;
                 }
             }
         }
@@ -60,20 +72,25 @@
                 &__content{
                     text-align: center;
                     padding: 10px;
-                  
-                    width: 100%
+                    width: 100%;
+                    &-subheader{
+                        margin-top: -1.2rem;
+                    }
                 }
             }
             
         }
     }
 
-    // review section
-    .review-section{
-        .review-wrap{
-            flex-wrap: wrap;
+    // best seller section
+    .best-seller-section{
+        .font-title{
+            margin-bottom: -0.6rem;
         }
     }
+
+    // review section
+    
 
     // recent-seciton
     .recent-section{
@@ -92,17 +109,23 @@
         }
         .map-form-input{
             .font-subtitle{
-                margin-bottom: 30px;
+                font-size: 50px;
+                margin-bottom: 20px;
+                margin-top: 50px;
             }
             form{
                 .map-form-input__name{
                     @extend %form-display;
                     flex-direction: column;
-                    
                     .name-input{
                         @include form-input-main;
                         height: 3em;
                         margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
                     }
                 }
                 .map-form-input__date{
@@ -112,6 +135,11 @@
                         @include form-input-main;
                         height: 3em;
                         margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
                     }
                 }
                 .map-form-input-submit{ 
@@ -121,6 +149,11 @@
                         @include form-input-main;
                         height: 3em;
                         margin-bottom: 10px;
+                        font-size: 20px;
+                        border: 1px solid $main-btn-color;
+                        width: 100%;
+                        border-radius: 2px;
+                        padding: 8px;
                     }
                     .btn-main{
                         display: flex;
@@ -210,7 +243,6 @@
                     width: 100%
                 }
             }
-            
         }
     }
 
