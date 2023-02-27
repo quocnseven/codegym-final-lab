@@ -904,6 +904,12 @@
   }
   .book-section .book-info-wrap .book-info {
     width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  .book-section .book-info-wrap .book-info__item {
+    margin-bottom: 20px;
+    padding: 6px 10px;
   }
   .book-section .book-input {
     width: 100%;
